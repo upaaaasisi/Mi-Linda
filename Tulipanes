@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tulipanes Animados</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="garden">
+    <div class="cora"></div>
+  </div>
+  <h2> 
+    Gracias por haber llegado a mi vida, antes estaba viviendo pero contigo comenze a vivir de la manera mas bonita posible. Ojala te quedes conmigo por siempre y para siempre.<br><center>Te amo</center>
+  <script src="script.js"></script>
+  
+</body>
+</html>
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #87CEEB;
+  }
+  h2 {
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    font-size: 30px;
+  }
+  
+  .garden {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .cora {
+    width: 400px;
+    height: 400px;
+    background-image: url('https://images.vexels.com/media/users/3/144097/isolated/preview/3dedcd235214cdde6b4e171fdbf66c9d-icono-de-coraz-oacute-n-by-vexels.png');
+    background-size: cover;
+    animation: bloom 5s infinite alternate;
+  }
+  
+  @keyframes bloom {
+    0% { transform: scale(0.8); }
+    100% { transform: scale(1.2); }
+  }
+  /* Reglas de diseño responsivo */
+@media screen and (max-width: 768px) {
+  .titulo {
+    font-size: 18px; /* Ajusta el tamaño del título para dispositivos móviles */
+  }
+}
